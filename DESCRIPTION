@@ -1,0 +1,13 @@
+Package: pairmemo
+Title: Flexible On-Disk Function Memoization
+Version: 0.0.0.9000
+Authors@R: person("x", role = c("aut", "cre"),
+    email = "placeholder@example.com")
+Description: BLANK.
+License: GPL (>= 3)
+Encoding: UTF-8
+Imports:
+    digest, jsonlite
+Suggests: 
+    testthat (>= 3.0.0), qs, fst, data.table
+Config/testthat/edition: 3
