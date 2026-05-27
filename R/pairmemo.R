@@ -204,9 +204,9 @@ builtin.formats = list(
     rds = list(
         read = \(path) readRDS(path),
         write = \(v, path) saveRDS(v, path)),
-    qs = list(
-        read = \(path) qs::qread(path),
-        write = \(v, path) qs::qsave(v, path)),
+    qs2 = list(
+        read = \(path) qs2::qs_read(path),
+        write = \(v, path) qs2::qs_save(v, path)),
     fst = list(
         read = \(path) fst::read.fst(path, as.data.table = T),
         write = \(v, path) fst::write.fst(v, path)))

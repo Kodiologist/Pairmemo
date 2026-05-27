@@ -3,18 +3,18 @@ source("setup.R")
 
 test("list built-in formats",
    {l = pairmemo::builtin.formats
-    is(names(l), c("rds", "qs", "fst"))
+    is(names(l), c("rds", "qs2", "fst"))
     is(sort(names(l$rds)), c("name", "read", "write"))
     is(l$rds$name, "rds")
     is(is.function(l$rds$read), T)
     is(is.function(l$rds$write), T)})
 
 
-test("format qs",
-   {pm(format = "qs", f <- \(x)
+test("format qs2",
+   {pm(format = "qs2", f <- \(x)
         list(5, 5L, x, factor("spess")))
     is(f("hi"), list(5, 5L, "hi", factor("spess")))
-    is(qs::qread(file.path(TD, "f", names(meta(f)))), f("hi"))})
+    is(qs2::qs_read(file.path(TD, "f", names(meta(f)))), f("hi"))})
 
 
 test("format fst",

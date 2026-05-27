@@ -9,5 +9,5 @@ Encoding: UTF-8
 Imports:
     digest, jsonlite
 Suggests:
-    testthat (>= 3.0.0), qs, fst, data.table
+    testthat (>= 3.0.0), qs2, fst, data.table
 Config/testthat/edition: 3
