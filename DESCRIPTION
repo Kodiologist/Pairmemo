@@ -8,6 +8,6 @@ License: GPL (>= 3)
 Encoding: UTF-8
 Imports:
     digest, jsonlite
-Suggests: 
+Suggests:
     testthat (>= 3.0.0), qs, fst, data.table
 Config/testthat/edition: 3
